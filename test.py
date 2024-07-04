@@ -4,7 +4,7 @@ import json
 # endpoint
 url = "<endpoint>"
 
-# Username and password
+# Username and password 
 username = "<username>"
 password = "<password>"
 
@@ -21,7 +21,7 @@ def test(response_data, level1, level2):
     menuTree = data['menuTree']
     l1Menu = menuTree['children']
 
-    if(len(l1Menu) != (level1)): #Check length of L1 menu
+    if(len(l1Menu) != len(level1)): #Check length of L1 menu
         flag = 0
     
     for l1Index, l1Element in enumerate(l1Menu):
